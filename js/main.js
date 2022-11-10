@@ -1,6 +1,6 @@
-let data = "http://localhost:5000/useres"
+let data = "http://localhost:5001/useres"
 
-fetch(data)
+  fetch(data)
   .then((respons) => respons.json())
   .then((result) => rendereData(result));
 
@@ -35,7 +35,7 @@ function addData() {
     score: retingValue
   };
   if (userNameValue.length === 0 || retingValue.length === 0) {
-    alert("to'ldir");
+    alert("ILTIMOS TO'LDIRING");
   } else {
     fetch(data, {
       method: "POST",
